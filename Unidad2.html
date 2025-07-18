@@ -3,92 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <title>Unidad 2 - Tejido Muscular y Nervioso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
   <style>
+    .imagen-histo {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagen-histo:hover {
+  transform: scale(1.03);
+}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #DFF3F1; /* Fondo verde azulado suave */
-      color: #2C3E50;
-      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
       padding: 20px;
+      line-height: 1.6;
     }
     header {
-      background-color: #00796B; /* Verde azulado */
+      background: linear-gradient(135deg, #004d40, #00796b);
       color: white;
-      padding: 20px;
       text-align: center;
-      border-radius: 0 0 10px 10px;
+      padding: 30px 20px;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 20px rgba(0,255,255,0.15);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin: 0;
     }
     .contenido {
-      max-width: 800px;
-      margin: 30px auto;
-      background-color: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
     }
-    h2 {
-      color: #004D40; /* Verde oscuro */
+    h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      color: #00cccc;
       margin-top: 30px;
     }
-    p {
-      line-height: 1.6;
+    p, ul, ol {
+      margin-top: 10px;
       text-align: justify;
     }
+    ul { padding-left: 20px; }
     .botones {
       display: flex;
       justify-content: space-between;
       margin-top: 40px;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+      gap: 20px;
+      flex-wrap: wrap;
     }
     .botones a {
       text-decoration: none;
-      background-color: #00796B;
-      color: white;
-      padding: 10px 20px;
+      background-color: #00cccc;
+      color: #000;
+      padding: 12px 25px;
       border-radius: 6px;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
     .botones a:hover {
-      background-color: #004D40;
+      background-color: #00e6e6;
+      transform: translateY(-2px);
+    }
+    @media (max-width: 600px) {
+      .contenido { padding: 25px 20px; }
+      header h1 { font-size: 1.6rem; }
+      .botones { flex-direction: column; align-items: center; }
+      .botones a { width: 100%; text-align: center; }
     }
   </style>
 </head>
 <body>
-
 <header>
   <h1>Unidad 2: Tejido Muscular y Nervioso</h1>
 </header>
-
 <div class="contenido">
   <h2>Tejido Muscular 🧬</h2>
-  <p>
-    El tejido muscular está formado por células especializadas denominadas fibras musculares, cuya principal función es la contracción. 
-    Fortoul distingue tres tipos: músculo esquelético, cardíaco y liso. Cada uno tiene características morfológicas, nucleares y funcionales particulares.
-  </p>
-  <p>
-    El músculo esquelético es estriado, voluntario y multinucleado. El músculo cardíaco también es estriado, pero involuntario, con discos intercalares. 
-    El músculo liso, por su parte, no presenta estriaciones y se encuentra en órganos huecos como intestinos y vasos sanguíneos.
-  </p>
-
+   <img src="imagenes/tejido muscular.png" alt="Funciones" class="imagen-histo">
+  <p>El tejido muscular está formado por células especializadas denominadas fibras musculares, cuya principal función es la contracción.</p>
+  <h3>Músculo liso</h3>
+    <img src="imagenes/musculo liso.jpg" alt="Funciones" class="imagen-histo">
+  <h4>Definición y características:</h4>
+  <p>El músculo liso es involuntario, no estriado, formado por células fusiformes con un solo núcleo central.</p>
+  <h4>Contracción:</h4>
+  <ul>
+    <li>Lenta, sostenida y rítmica.</li>
+    <li>Regulada por el sistema nervioso autónomo, hormonas y factores locales.</li>
+    <li>No presenta sarcómeros visibles, pero sí actina y miosina.</li>
+  </ul>
+  <h4>Ubicación:</h4>
+  <ul>
+    <li>Aparato digestivo, respiratorio, urinario, vasos sanguíneos, útero, iris del ojo.</li>
+  </ul>
+  <h4>Funciones:</h4>
+  <ul>
+    <li>Movimiento interno de sustancias (peristalsis).</li>
+    <li>Regulación de diámetro de vasos y bronquios.</li>
+    <li>Contracción uterina, tono visceral.</li>
+  </ul>
+ 
   <h2>Tejido Nervioso 🧬</h2>
-  <p>
-    El tejido nervioso está compuesto principalmente por neuronas y células de la glía. Fortoul destaca la capacidad de las neuronas para generar, 
-    conducir y transmitir impulsos eléctricos, permitiendo la comunicación entre diferentes partes del cuerpo.
-  </p>
-  <p>
-    Las neuronas tienen tres componentes básicos: soma, dendritas y axón. Las células gliales (como los astrocitos, oligodendrocitos y microglía) 
-    cumplen funciones de sostén, protección, nutrición y reparación del sistema nervioso.
-  </p>
-
+      <img src="imagenes/Tejido Nervioso.jpg" alt="Funciones" class="imagen-histo">
+  <h3>Definición:</h3>
+  <p>Tejido especializado en recepción y transmisión de señales. Formado por neuronas y neuroglías.</p>
+  <h3>Neuronas:</h3>
+  <p>Células que generan y transmiten impulsos. Estructura: soma, dendritas, axón.</p>
+  <h3>Sustancia gris y blanca:</h3>
+      <img src="imagenes/materia-gris-cerebro-wide_webp.webp" alt="Funciones" class="imagen-histo">
+  <ul>
+    <li><strong>Gris:</strong> somas, sinapsis. Procesamiento.</li>
+    <li><strong>Blanca:</strong> axones mielinizados. Conducción rápida.</li>
+  </ul>
+  <h3>Transporte axónico:</h3>
+  <ul>
+    <li><strong>Anterógrado:</strong> soma → terminal. Rápido o lento.</li>
+    <li><strong>Retrógrado:</strong> terminal → soma. Reutiliza materiales o transporta virus.</li>
+  </ul>
+  <h3>Polaridad de membrana:</h3>
+  <p>Basada en la distribución de iones. Potencial de reposo → -70 mV. Interviene la bomba sodio-potasio.</p>
+  <h3>Mielina</h3>
+  <p>Capa aislante en axones. Mejora la conducción saltatoria.</p>
+  <ul>
+    <li>SNC: oligodendrocitos.</li>
+    <li>SNP: células de Schwann.</li>
+  </ul>
+  <h3>Células gliales</h3>
+      <img src="imagenes/celulas gliales.avif" alt="Funciones" class="imagen-histo">
+  <ul>
+    <li><strong>Astrocitos:</strong> soporte, barrera hematoencefálica.</li>
+    <li><strong>Oligodendrocitos:</strong> mielina en SNC.</li>
+    <li><strong>Microglía:</strong> defensa inmunológica.</li>
+    <li><strong>Ependimocitos:</strong> revisten ventrículos.</li>
+    <li><strong>Schwann:</strong> mielina en SNP.</li>
+    <li><strong>Satélite:</strong> soporte en ganglios periféricos.</li>
+  </ul>
+  <h3>Nervio</h3>
+  <p>Conjunto de axones en el SNP. Envueltos en endoneuro, perineuro y epineuro. Clasificación: sensitivos, motores o mixtos.</p>
   <div class="botones">
     <a href="Unidad1.html">← Volver a Unidad 1</a>
+    <a href="index.html">🏠 Inicio</a>
     <a href="Unidad3.html">Siguiente: Unidad 3 →</a>
   </div>
 </div>
-
 </body>
 </html>
