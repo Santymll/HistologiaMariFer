@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Unidad 3 - Histología de Aparatos y Sistemas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
+
+  <style>
+    .imagen-histo {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagen-histo:hover {
+  transform: scale(1.03);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    padding: 20px;
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(135deg, #004d40, #00796b);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.15);
+  }
+
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .contenido {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #00cccc;
+    margin-top: 30px;
+  }
+
+  h3 {
+    margin-top: 25px;
+    color: #00e6e6;
+  }
+
+  p, li {
+    margin-top: 10px;
+    text-align: justify;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  .botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .botones a {
+    text-decoration: none;
+    background-color: #00cccc;
+    color: #000;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .botones a:hover {
+    background-color: #00e6e6;
+    transform: translateY(-2px);
+  }
+
+  /* 🔷 Estilo moderno para tablas */
+  .tabla-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 25px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    font-size: 0.95rem;
+    min-width: 600px;
+  }
+
+  table th, table td {
+    background-color: #121212;
+    padding: 12px 16px;
+    text-align: left;
+    color: #e0f7fa;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 255, 255, 0.08);
+  }
+
+  table th {
+    background: linear-gradient(135deg, #00695c, #00897b);
+    color: #ffffff;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  table tr:hover td {
+    background-color: #1c1c1c;
+    transition: background-color 0.3s ease;
+  }
+
+  @media (max-width: 600px) {
+    .contenido {
+      padding: 25px 20px;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+    }
+
+    .botones {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .botones a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Unidad 3: Histología de Aparatos y Sistemas</h1>
+</header>
+
+<div class="contenido">
+  <h2>Aparato Circulatorio 🧬</h2>
+    <img src="imagenes/cardiovascular-vena-arteria.png" alt="Funciones" class="imagen-histo">
+
+  <h3>Características histológicas de la pared de los vasos sanguíneos</h3>
+  <p>Los vasos sanguíneos están formados por tres capas concéntricas:</p>
+  <ul>
+    <li><strong>Túnica íntima:</strong> epitelio plano simple (endotelio) + lámina basal + subendotelio de tejido conectivo.</li>
+    <li><strong>Túnica media:</strong> músculo liso y fibras elásticas. Más gruesa en arterias.</li>
+    <li><strong>Túnica adventicia:</strong> tejido conectivo, vasos vasorum y nervios. Más prominente en venas.</li>
+  </ul>
+<div class="tabla-responsive">
+  <table>
+    <tr><th>Tipo de vaso</th><th>Rasgo clave</th></tr>
+    <tr><td>Arteria elástica</td><td>Túnica media rica en láminas elásticas</td></tr>
+    <tr><td>Arteria muscular</td><td>Túnica media con predominio de músculo liso</td></tr>
+    <tr><td>Venas</td><td>Túnica adventicia más gruesa que la media</td></tr>
+    <tr><td>Capilares</td><td>Solo endotelio + lámina basal (una capa)</td></tr>
+  </table>
+  </div>
+
+  <h3>Características histológicas del corazón</h3>
+      <img src="imagenes/Características histológicas del corazón.jpg" alt="Funciones" class="imagen-histo">
+  <ul>
+    <li><strong>Endocardio:</strong> epitelio plano simple + conectivo subendotelial.</li>
+    <li><strong>Miocardio:</strong> músculo estriado cardíaco con discos intercalares.</li>
+    <li><strong>Epicardio:</strong> conectivo laxo + epitelio (mesotelio).</li>
+  </ul>
+  <p>Otros: sistema de conducción, vasos coronarios y válvulas con conectivo denso.</p>
+
+  <h3>Características Histológicas de los Vasos Linfáticos</h3>
+  <ul>
+    <li>Endotelio plano simple con uniones laxas.</li>
+    <li>Lámina basal discontinua o ausente.</li>
+    <li>Sin glóbulos rojos en condiciones normales.</li>
+    <li>Válvulas internas que aseguran flujo unidireccional.</li>
+    <li>Pared delgada, menos músculo liso que las venas.</li>
+    <li>Clasificación: capilares linfáticos, colectores y conductos linfáticos.</li>
+  </ul>
+
+  <p><strong>Importancia clínica:</strong> edema, metástasis e infecciones por vía linfática.</p>
+
+  <h2>Aparato de Sostén 🧬</h2>
+        <img src="imagenes/Aparato de Sostén.jpg" alt="Funciones" class="imagen-histo">
+
+  <h3>Componentes del tejido cartilaginoso</h3>
+  <ul>
+    <li>Condrocitos en lagunas.</li>
+    <li>Matriz rica en colágeno tipo II y agua.</li>
+    <li>Pericondrio en cartílagos no articulares.</li>
+  </ul>
+
+  <h3>Crecimiento del cartílago</h3>
+  <ul>
+    <li><strong>Intersticial:</strong> división interna de condrocitos.</li>
+    <li><strong>Aposicional:</strong> desde el pericondrio hacia afuera.</li>
+  </ul>
+
+  <h3>Tipos de cartílago</h3>
+        <img src="imagenes/tipos de cartilago.webp" alt="Funciones" class="imagen-histo">
+  <div class="tabla-responsive">
+  <table>
+    <tr><th>Tipo</th><th>Características</th><th>Ubicación</th></tr>
+    <tr><td>Hialino</td><td>Matriz homogénea, colágeno II</td><td>Articulaciones, nariz, tráquea</td></tr>
+    <tr><td>Elástico</td><td>Fibras elásticas + colágeno</td><td>Oreja, epiglotis</td></tr>
+    <tr><td>Fibroso</td><td>Mucho colágeno I, resistente</td><td>Discos intervertebrales, meniscos</td></tr>
+    </div>
+  </table>
+
+  <h3>Tejido óseo</h3>
+        <img src="imagenes/HUESO-ESPONJOSO.png" alt="Funciones" class="imagen-histo">
+  <p>Conectivo mineralizado que forma el esqueleto. Tiene osteoblastos, osteocitos, osteoclastos y matriz con colágeno I + hidroxiapatita. Presenta osteonas, canalículos, periostio.</p>
+  <p><strong>Tipos:</strong> compacto (con osteonas) y esponjoso (trabéculas con médula).</p>
+
+  <h3>Ligamentos</h3>
+        <img src="imagenes/ligamentos.jpg" alt="Funciones" class="imagen-histo">
+  <p>Conectivo denso regular que une huesos:</p>
+  <ul>
+    <li>Fibras colágenas tipo I paralelas.</li>
+    <li>Pocos vasos, difícil reparación.</li>
+    <li>Fibroblastos responsables de mantenimiento.</li>
+    <li>Estabiliza articulaciones y limita movimientos.</li>
+  </ul>
+
+  <div class="botones">
+    <a href="Unidad2.html">← Volver a Unidad 2</a>
+    <a href="index.html">🏠 Inicio</a>
+    <a href="Unidad4.html">Siguiente: Unidad 4 →</a>
+  </div>
+</div>
+
+</body>
+</html>
