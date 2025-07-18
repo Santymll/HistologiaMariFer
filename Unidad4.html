@@ -1,98 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Unidad 4 - Sistema Tegumentario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #DFF3F1; /* Fondo verde azulado suave */
-      color: #2C3E50;
+    .imagen-histo {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagen-histo:hover {
+  transform: scale(1.03);
+}
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
       padding: 20px;
+      line-height: 1.6;
     }
     header {
-      background-color: #00796B; /* Verde azulado */
+      background: linear-gradient(135deg, #004d40, #00796b);
       color: white;
-      padding: 20px;
       text-align: center;
-      border-radius: 0 0 10px 10px;
+      padding: 30px 20px;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 20px rgba(0,255,255,0.15);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin: 0;
     }
     .contenido {
-      max-width: 800px;
-      margin: 30px auto;
-      background-color: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
     }
     h2 {
-      color: #004D40; /* Verde oscuro */
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: #00cccc;
       margin-top: 30px;
     }
-    p {
-      line-height: 1.6;
+    h3 {
+      color: #00e6e6;
+      margin-top: 20px;
+    }
+    p, li {
+      margin-top: 10px;
       text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
     }
     .botones {
       display: flex;
       justify-content: space-between;
       margin-top: 40px;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+      gap: 20px;
+      flex-wrap: wrap;
     }
     .botones a {
       text-decoration: none;
-      background-color: #00796B;
-      color: white;
-      padding: 10px 20px;
+      background-color: #00cccc;
+      color: #000;
+      padding: 12px 25px;
       border-radius: 6px;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
     .botones a:hover {
-      background-color: #004D40;
+      background-color: #00e6e6;
+      transform: translateY(-2px);
+    }
+    .seccion {
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      .contenido {
+        padding: 25px 20px;
+      }
+      header h1 {
+        font-size: 1.6rem;
+      }
+      .botones {
+        flex-direction: column;
+        align-items: center;
+      }
+      .botones a {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
-
 <header>
   <h1>Unidad 4: Sistema Tegumentario</h1>
 </header>
-
 <div class="contenido">
-  <h2>Epidermis 🧬</h2>
-  <p>
-    La epidermis es un epitelio estratificado plano queratinizado. Está formada por queratinocitos organizados en capas: 
-    basal, espinosa, granulosa, lúcida (en piel gruesa) y córnea. Fortoul describe su función como protectora, reguladora y sensorial.
-  </p>
+  <h2>Epidermis 🧪</h2>
+    <img src="imagenes/Epidermis-delimited.jpeg" alt="Funciones" class="imagen-histo">
+  <h3>Características histológicas</h3>
+  <p>La epidermis es la capa más externa de la piel, constituida por un epitelio escamoso estratificado queratinizado.</p>
+  <p><strong>Composición celular:</strong> Principalmente queratinocitos (90-95%), además de células de Langerhans, melanocitos y células de Merkel.</p>
+  <p><strong>Capas principales (de profunda a superficial):</strong></p>
+  <ul>
+        <img src="imagenes/Estructura-de-la-epidermis-y-division-por-estratos.png" alt="Funciones" class="imagen-histo">
+    <li><strong>Estrato basal:</strong> Células activamente mitóticas, melanocitos, células de Merkel.</li>
+    <li><strong>Estrato espinoso:</strong> Queratinocitos con desmosomas, soporte mecánico.</li>
+    <li><strong>Estrato granuloso:</strong> Gránulos de queratohialina, inicio de queratinización.</li>
+    <li><strong>Estrato lúcido:</strong> Solo en piel gruesa, sin núcleo.</li>
+    <li><strong>Estrato córneo:</strong> Células muertas llenas de queratina, barrera impermeable.</li>
+  </ul>
+  <p><strong>Funciones:</strong> Protección física, impermeabilidad.</p>
 
-  <h2>Dermis 🧬</h2>
-  <p>
-    Es una capa de tejido conectivo denso que proporciona soporte a la epidermis. Contiene vasos sanguíneos, terminaciones nerviosas, 
-    folículos pilosos y glándulas. Se divide en dermis papilar (laxa) y dermis reticular (densa).
-  </p>
+  <h2>Dermis 🧪</h2>
+        <img src="imagenes/dermis.png" alt="Funciones" class="imagen-histo">
+  <h3>Características histológicas</h3>
+  <p>La dermis es la capa profunda y vascularizada de la piel, situada justo debajo de la epidermis, compuesta por tejido conectivo.</p>
+  <p><strong>Composición:</strong> Fibras de colágeno tipo I, fibras elásticas, fibroblastos, macrófagos, mastocitos.</p>
+  <p><strong>Capas:</strong></p>
+  <ul>
+    <li><strong>Dermis papilar:</strong> Conectivo laxo, papilas dérmicas, capilares, terminaciones nerviosas.</li>
+    <li><strong>Dermis reticular:</strong> Conectivo denso irregular, colágeno grueso, glándulas, folículos, vasos y nervios.</li>
+  </ul>
+  <p><strong>Funciones:</strong> Soporte estructural, elasticidad, nutrición, sensibilidad y reparación.</p>
 
-  <h2>Hipodermis 🧬</h2>
-  <p>
-    También llamada tejido subcutáneo, está compuesta principalmente por tejido adiposo. Actúa como amortiguador mecánico, 
-    reserva energética y aislante térmico.
-  </p>
-
-  <h2>Glándulas de la piel 🧬</h2>
-  <p>
-    Fortoul señala tres tipos principales: glándulas sudoríparas (regulan temperatura), sebáceas (lubrican la piel) y mamarias (modificadas). 
-    Cada una tiene una estructura y mecanismo de secreción diferente.
-  </p>
+  <h2>Hipodermis 🧪</h2>
+          <img src="imagenes/Illustración-de-la-hipodermis.jpg" alt="Funciones" class="imagen-histo">
+  <h3>Características histológicas</h3>
+  <p>La hipodermis o tejido subcutáneo es la capa más profunda, compuesta por tejido adiposo y conectivo laxo.</p>
+  <ul>
+    <li><strong>Adipocitos:</strong> Almacenan energía y actúan como aislantes.</li>
+    <li><strong>Fibras:</strong> Colágenas y elásticas.</li>
+    <li><strong>Vascularización y nervios:</strong> Termorregulación y percepción.</li>
+  </ul>
+  <p><strong>Funciones:</strong> Reserva energética, protección, aislamiento térmico y conexión con estructuras profundas.</p>
 
   <div class="botones">
     <a href="Unidad3.html">← Volver a Unidad 3</a>
-    <a href="index.html">Salir a la pagina principal →</a>
+    <a href="index.html">🏠 Inicio</a>
   </div>
 </div>
-
 </body>
 </html>
